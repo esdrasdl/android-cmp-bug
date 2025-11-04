@@ -1,8 +1,8 @@
 plugins {
     alias(libs.plugins.kotlin.multiplatform)
     alias(libs.plugins.android.kotlin.multiplatform.library)
+     alias(libs.plugins.composeMultiplatform)
     alias(libs.plugins.kotlin.compose)
-    alias(libs.plugins.composeMultiplatform)
 }
 
 kotlin {
@@ -42,7 +42,7 @@ kotlin {
         commonMain {
             dependencies {
                 implementation(libs.kotlin.stdlib)
-                //implementation(compose.runtime)
+                implementation(compose.runtime)
 
             }
         }
